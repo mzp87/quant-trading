@@ -1,0 +1,17 @@
+importy:
+import copy
+import datetime as dt
+import dateutil
+import decimal
+import fix_yahoo_finance as yf
+import matplotlib.pyplot as plt
+import numpy as np
+import os
+import pandas as pd
+import re
+import scipy.integrate
+import scipy.stats
+import statsmodels.api as sm
+import yfinance as yf
+os.chdir('d:/')
+os.chdir('K:/ecole/github/televerser/données')

@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "quant-trading"
+version = "0.1.0"
+description = "Eksperymentalne środowisko do analiz i handlu algorytmicznego w Pythonie"
+authors = ["Marcin <zuk@g.pl>"]
+readme = "README.md"
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.26"
+pandas = "^2.2"
+matplotlib = "^3.9"
+scipy = "^1.13"
+statsmodels = "^0.14"
+yfinance = "^0.2"
+python-dateutil = "^2.9"
+fix-yahoo-finance = {version = "*", optional = true}
+# fix_yahoo_finance jest starszym wrapperem, często zastąpiony przez yfinance
+# można go zostawić opcjonalnie, jeśli stary kod go wymaga
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^4.2"
+ipykernel = "^6.29"
+black = "^24.8"
+isort = "^5.13"
+pytest = "^8.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
